@@ -1,1 +1,136 @@
+Static block and constructor
+  constructor:
+   are used to initialize the objects,for every class there will be a default constructor,whenever we create an object 
+  constructor will be called than object will be created
+ * constructor having class nameor method properties
+     to create a object two times constructor will be called
 
+     CODE:
+     public class q2 {
+    public static void main(String[] args) {
+      Demo d1 = new Demo();
+      Demo d2 = new Demo();
+      }
+    }
+
+class Demo{
+  static{
+    System.out.println("static Block");
+  }
+  
+  Demo(){
+    System.out.println("constructor");
+  }
+}
+
+OUTPUT:
+static Block
+constructor
+constructor
+  
+Static block:static block will be created with a key word it will be called automaticallty no need to call either object or class
+Static method:for static methhod no need to call with object we can directly call with class and here sttic will act as instance or object.
+public class Student{
+   public static void main(String[] args){
+     person obj = new person();
+     obj.setAge(24);
+     obj.setName("Vignesh");
+     obj.setERP(372);
+     obj.setMarks(80);
+     obj.setPassedOutYear(2029);
+     
+     int res = obj.getAge();
+     String name = obj.getName();
+     int erp = obj.getERP();
+     int marks = obj.getMarks();
+     int year = obj.getPassedOutYear();
+     
+     System.out.println(res);
+     System.out.println(name);
+     System.out.println(erp);
+     System.out.println(marks);
+     System.out.println(year);
+   }
+}
+class person{
+  int age;
+  String name;
+  int ERP;
+  int marks;
+  int passedoutyear;
+  
+  
+  void setAge(int age1){
+    this.age = age1;
+  }
+  int getAge(){
+  return age;
+  }
+  
+  void setName(String name1){
+    this.name = name1;
+  }
+  String getName(){
+    return name;
+  }
+  void setERP(int ERP1){
+    this.ERP = ERP1;
+  }
+  int getERP(){
+    return ERP;
+  }
+  void setMarks(int marks1){
+    this.marks = marks1;
+  }
+  int getMarks(){
+    return marks;
+  }
+  void setPassedOutYear(int year1){
+    this.passedoutyear = year1;
+  }
+  int getPassedOutYear(){
+    return passedoutyear;
+  }
+}
+output:
+24
+srikrishna
+2029
+70
+
+conditional statements:
+types:
+if 
+else
+else if
+and switch case
+conditional statements are used to check the condition and to print the relevant block in constant time because 
+ex:
+if(x>18){
+System.out.println("adult");
+}
+else
+{
+System.out.println("child");
+}
+control statements:
+entry control loops  
+for 
+while
+for(start;end;diff){
+}
+start;
+while(end){
+diff;
+}
+when we dont no the range we will use for loop 
+ex:
+int[] arr={1,2,3,4,5};
+for(int i=0;i<n;i++){
+return arr[i];
+}
+print 5 table
+5*1=5
+for(int i=1;i<=n;i++){
+System.out.pritnln(n+"*"+i+"="+n*i);
+}
