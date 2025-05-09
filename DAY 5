@@ -1,1 +1,173 @@
+Array:
+collection of similar kind of data at continous allocation
+in c and c++ we have pointers definitely elements will be stored in continous format
+in java we dont have pointers then there is a chance of elements might store in random places
+syntax:
+data type[]array name
+primitive and non primitive 
+primitive data types cant be splitted or divided
+non primitve data types can be divided
+examples for primitive data types:
+int float char.....
+for non primitive data types
+string:all the objects that were created by the object
+
+All the objects will be stored in heap memory
+All the references will be stored in stack memory
+
+Stack memory having less space compared to heap memory
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      datatype[] array name;
+      int a = 10;
+      int b = 12;
+      int c = 14;
+      int d = 16;
+  }
+}
+All the variables are storing in same data type
+instead of creating multiple variables create an array to store those values
+To create multiple variables to get the data simply we can get the varibale
+when it comes to array we want to print the data we can print using index values
+By default index values will start with 0
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int[] arr = {1,2,3,4,5};
+  }
+}
+* Declaration and initialisation happened in same line
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int[] arr = {1,2,3,4,5};
+      int[] arr;//Declaration
+      arr[]={1,2,3,4,5};//initialisation
+  }
+}
+To get the length of the array we have a method call array.length() in arrays 
+and in strings it is string_name.length()
+
+CAMEL CASE AND SNAKE CASE:
+using under scroll is snake case 
+In arrays it is arrayName.length and 
+in strings it is string _name.length()
+using capital letter is camel case
+In arrays it is arrayName.length and 
+in strings it is string _name.length()
+In java it is prefered to write production level code
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int[] arr = {1,2,3,4,5};
+      for(int i=0;i<arr.length;i++){
+        System.out.println(arr[i]);
+      }
+      void additionOfTwoNumbers(){
+  }
+}
+-Type Of Printing Formats
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int[] arr = {1,2,3,4,5};
+      for(int i=0;i<arr.length;i++){
+        System.out.println(arr[i]);
+      }
+  }
+}
+We can print the Array values using For loop
+
+* We can print the Array values using for each loop
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int[] arr = {1,2,3,4,5};
+      for(int i : arr){
+        System.out.print(i + " ");
+      }
+  }
+}
+In For Each loop we dont need index values
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int[] arr = {1,2,3,4,5};
+        System.out.print(Arrays.toString(arr));
+      }
+  }
+toString is an inbuilt method to print an array
+toStringwill accept only one argument(i.e array)
+Declaring the size of an array and intilizing the values later
+Array having fixed size if you declare an array size it cant be change
+int[]arr=new int[5];
+ before = array reference first created with the help of new of keyword actual object will be cretaed in heap memory for that particular data type and size
+if the array type is int all the default values are 0 and it os string thr default values are null and null is a literal
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner in = new Scanner(System.in);
+        int[] arr = new int[5];
+        
+        for(int i = 0;i<arr.length;i++){
+          System.out.println("Enter the values:- ");
+          arr[i] = in.nextInt();
+    }
+         
+        for(int i = 0;i<arr.length;i++){
+          System.out.print(arr[i]);
+        }
+        for(int i : arr){
+          System.out.print(i);
+        }
+        System.out.print(Arrays.toString(arr));
+      }
+  }
+inpiut:
+1
+2
+3
+4
+5
+Output:
+
+Enter the values:- 
+Enter the values:- 
+Enter the values:- 
+Enter the values:- 
+Enter the values:- 
+1234512345[1, 2, 3, 4, 5]
+whenever you are trying to asign or try to get int value or int index of array get expect out of bond 
+To print how many even and odd numbers
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner in = new Scanner(System.in);
+        int[] arr = {1,2,3,4,5};
+        
+        int evenCount = 0;
+        int oddCount = 0;
+        for(int i = 0;i<arr.length;i++){
+          if(arr[i]%2 == 0){
+            evenCount++;
+          }else{
+            oddCount++;
+          }
+        }
+        System.out.println("Even numbers count: " + evenCount);
+        System.out.println("Odd numbers count: " + oddCount);
+    }
+}
+
 
