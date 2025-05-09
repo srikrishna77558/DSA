@@ -169,5 +169,25 @@ public class Main {
         System.out.println("Odd numbers count: " + oddCount);
     }
 }
+To print second highest value
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int[] arr = {1,2,3,4,4};
+        int heightValue  = arr[0];
+        int secondHeightValue = arr[0];
+        
+        for(int i = 1; i< arr.length; i++){
+            if(arr[i] > heightValue){
+                secondHeightValue = heightValue;
+                heightValue = arr[i];
+            }else if(arr[i] > secondHeightValue){
+                secondHeightValue = arr[i];
+            }
+        }
+        System.out.println(secondHeightValue);
+            }
+        }
 
 
