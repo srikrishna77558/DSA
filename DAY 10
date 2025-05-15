@@ -1,1 +1,28 @@
+STRINGS:
+string are classes,arrays are objects.the sequence of characters is called strings
+Strings are immutable all the array objects will be created in int memory but strings are created inside heap memory
+once a string got created it will be created fixed.it means we cant modify the string
+String a="hello";
+String b="hello";
+System.out.println(a==b);
+String a=new String("hello");
+String b=new String("hello");
+System.out.println( a== b);
+
+System.out.println( a== b);
+== used to compare data not address
+
+System.out.println(a.equals(b));
+equals is used to compare address
+
+arr.length is a variable or feel
+str.length is a value it returns no of parameters.
+
+
+
+
+Back tracking:
+-example of recurssion
+in recursion we have only two possibilities either if and for else and in backtracking we have multiple possibilities,most of the problems whenever we reach base case we have to print all the base case elements
+remove last element in every recursive call 
 
